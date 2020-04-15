@@ -1,0 +1,71 @@
+.login-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: $color-gray-white-2;
+    background-image: 
+    url(../img/loginbg-left.png),
+    url(../img/loginbg-right.png);
+    background-position:
+        bottom left, /* this positions the first image */
+        bottom right ; /* this positions the second image */
+    background-repeat:
+        no-repeat; /* this applies to both images */
+    .logo {
+        max-height: 8rem;
+    }
+}
+
+.login {
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &__item-container {
+        margin-top: 9.5rem;
+        // height: 61rem;
+        width: 30rem;
+        
+        text-align: center;
+     
+        .identity-container {
+            margin-top: 19rem;
+         }
+        
+    }
+    &__title {
+        margin-top: 2.5rem;
+        font-size: 1.8rem;
+        font-family: NotoSans-Regular;
+        color: $color-black-1;
+    }
+    &__button-container {
+       width: 100%; 
+       .google {
+            background-color: #df4830;
+        }
+        .facebook {
+            background-color: #507cc0;
+        }
+    }
+    &__button{
+        display: block;
+        width: 100%;
+        height: 5rem;
+        border: 0;
+        border-radius: 4px;
+        font-size: 1.8rem;
+        font-family: NotoSans-Regular;
+        color: $color-white;
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+        &:focus {
+            outline: none;
+        }
+    } 
+   
+   
+}

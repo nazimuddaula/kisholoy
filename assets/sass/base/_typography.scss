@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("../fonts/NotoSansBengali-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans-Light";
+  src: url("../fonts/NotoSansBengali-Light.ttf");
+}
+@font-face {
+  font-family: "NotoSans-Thin";
+  src: url("../fonts/NotoSansBengali-Thin.ttf");
+}
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url("../fonts/NotoSansBengali-Medium.ttf");
+}
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("../fonts/NotoSansBengali-Bold.ttf");
+}
+
+body {
+  // font-family: "Source_Sans_Pro", sans-serif;
+  font-family: NotoSans-Regular, "Arial", sans-serif;
+  /* font-size: 16px; */
+  color: #333333;
+  line-height: 1.42857143;
+  background-color: $base-color
+}
+
+a {
+  &:link,
+  &:visited {
+    color: #505050;
+  }
+}
+
+.heading-primary {
+  &__main {
+    color: $color-primary;
+    font-family: NotoSans-Bold;
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+   
+  }
+  &__sub {
+    color: $color-gray-dark-1;
+    font-family: NotoSans-Regular;
+    font-size: 1.8rem;
+  }
+}
+
+
+.heading-secondary {
+  color: $color-black;
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+
+.heading-tertiary {
+  font-size: 1.4rem;
+  font-weight: 700;
+}

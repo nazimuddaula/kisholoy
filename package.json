@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "compress:sass": "node-sass assets/sass/main.scss assets/css/style.css -w",
+    "dev": "npm-run-all -p -r compress:sass && live-server"
+  },
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}

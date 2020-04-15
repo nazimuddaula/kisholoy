@@ -1,0 +1,64 @@
+.section-bg {
+  height: 67.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 18.5rem;
+  background-image: 
+    url(../img/bg-1.png),
+    url(../img/bg-2.png);
+  background-position:
+  top left -35.5rem, /* this positions the first image */
+    top right; /* this positions the second image */
+  background-repeat:
+    no-repeat; /* this applies to both images */
+    @include respond(big-desktop){
+      background-position:
+      top left , /* this positions the first image */
+      top right; 
+    }
+    
+    @include respond(tab-land) {
+     
+      padding: 18.5rem  5rem 0;
+      background-image: url(../img/bg-2.png);
+      background-position: top right; /* this positions the second image */
+      background-repeat:no-repeat; 
+      // margin-bottom: $gutter-vertical-small;
+    }
+    @include respond(tab-port) {
+      background: none;
+      
+      // margin-bottom: $gutter-vertical-small;
+    }
+  .heading-starter-button {
+    display: inline-block;
+    border: none;
+    padding: 1.5rem 3.5rem;
+    background-color: $color-primary;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    color: $color-white;
+
+    -webkit-box-shadow: 4px 4px 4px 0px $color-gray-white-1;
+    -moz-box-shadow: 4px 4px 4px 0px $color-gray-white-1;
+    box-shadow: 4px 4px 4px 0px $color-gray-white-1;
+ 
+  }
+  .heading-para {
+    &__main {
+      color: #afafaf;
+      font-family: NotoSans-Regular;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    &__sub {
+      color: $color-gray-dark-1;
+      font-family: NotoSans-Bold;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+  }
+ 
+}

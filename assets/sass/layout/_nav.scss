@@ -1,0 +1,23 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  @include respond(tab-land) {
+    padding: 0 5rem;
+  }
+}
+
+.main-nav {
+  padding-top: 7rem;
+
+  background: transparent;
+  @include respond(tab-land) {
+    background: transparent;
+     // margin-bottom: $gutter-vertical-small;
+  }
+  &__brand {
+    max-height: 8rem;
+  }
+}
